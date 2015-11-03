@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>prestige groomer</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="styles/bootstrap.css" />
+
+    <link rel="stylesheet" href="styles/main.css">
+
+  </head>
+  <body>
+
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-4 logo">
+            <img src="images/logodog.gif" class=" img-responsive logo-img" alt="Prestige Dog Grooming Logo">
+          </div>
+          <div class="col-xs-8 header-name">
+            <h1>Prestige Pet Grooming</h1>
+            <p>616-698-9823</p>
+          </div>
+        </div>
+      </div>
+
+    </header>
+
+     <nav class="navbar navbar-custom navbar-inverse navbar-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          
+        </div>
+        <div id="navbar" class="collapse navbar-collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>            
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    
+           
+    <section class="main">
+      <div class="container">
+        <div class="row main-row">
+            <div class="col-xs-12 col-sm-9 contact" >
+              <h1>Address and Directions</h1>
+              <div class="row"> 
+                <div class="col-xs-12 col-sm-6 address-contact">
+                  <h2>Contact Information</h2>
+                  <ul>
+                    <li><span>Phone:</span>  616-698-9823</li>
+                    <li><span>Email:</span></li>
+                    <li>4706 Morningside Dr. SE</li>
+                    <li>Kentwood, MI  49512</li>
+                  </ul>
+                </div>
+                
+                <div class="col-xs-12 col-sm-6 address-hours">
+                  <h2>Business Hours</h2>
+                  <dl>
+                    <dt>Monday:  </dt>
+                      <dd>  Closed</dd>
+                    <dt>Tuesday:  </dt>
+                      <dd>  8:00am - 2:00pm</dd>  
+                    <dt>Wed:  </dt>
+                      <dd>  8:00am - 2:00pm</dd>
+                    <dt>Thursday:  </dt>
+                      <dd>  8:00am - 2:00pm</dd>
+                    <dt>Friday:  </dt>
+                      <dd>  8:00am - 2:00pm</dd>
+                    <dt>Saturday:  </dt>
+                      <dd>  8:00am - 1:00pm</dd>
+                    <dt>Sunday:  </dt>
+                      <dd>  Closed</dd>
+                  </dl>
+                </div>
+              </div><!-- end row -->
+
+              <div class="row">
+                <div class="col-xs-12 map">                
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.7634368430527!2d-85.586604!3d42.877837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88184cc0ceaaffbf%3A0xf1f53a1bfed4082e!2s4706+Morningside+Dr+SE%2C+Kentwood%2C+MI+49512!5e0!3m2!1sen!2sus!4v1443580519643" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+              </div><!-- end row -->
+            </div><!-- end col -->
+
+          <div class="col-xs-12 col-sm-3 grooming-inputs">
+            <h1>Quick Quote:</h1>
+            <!-- Single button -->
+            <div class="btn-group-vertical dog-choices" role="group" aria-label="Vertical button group">
+              <div class="btn group" role="group">
+                <button type="button" id="dog-size-button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dog Size <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" id="dog-size-menu">
+                  <li>Small: Under 10 lbs</li>
+                  <li role="separator" class="divider"></li>
+                  <li>Medium: 11-25 lbs</li>
+                  <li role="separator" class="divider"></li>
+                  <li>Mid: 26-45 lbs</li>
+                  <li role="separator" class="divider"></li>
+                  <li>Large: 46-75 lbs</li>
+                  <li role="separator" class="divider"></li>
+                  <li>Giant: 76-115 lbs</li>
+                  <li role="separator" class="divider"></li>
+                  <li>XXL: Over 116 lbs</li>
+                </ul>
+              </div>
+
+              <div class="btn group" role="group">
+                <button type="button" class="btn btn-default dropdown-toggle" id="hair-length-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hair Type <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" id="hair-menu">
+                  <li>Short Hair</li>
+                  <li role="separator" class="divider"></li>
+                  <li>Med-Long Hair</li>
+                </ul>
+              </div>
+
+              <div class="btn group" role="group">
+                <button type="button" class="btn btn-default dropdown-toggle" id="service-type-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Service <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" id="service-menu">
+                  <li>Bath & Brush only</li>
+                  <li role="separator" class="divider"></li>
+                  <li>Bath & Full Groom</li>
+                  <li role="separator" class="divider"></li>
+                  <li>Doggie Day Spa</li>
+                  <li role="separator" class="divider"></li>
+                  <li>Puppy Intro</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="checkbox-services">
+              <h4>Additional Options:</h4>
+              <ul class="checkbox-options">
+                <li class="checkbox flea_bath">
+                  <label><input type="checkbox" value="flea_bath">Flea Bath</label>
+                </li>
+                <li class="checkbox soother_shampoo">
+                 <label><input type="checkbox" value="soother_shampoo">Soother Shampoo</label>
+                </li>
+                <li class="checkbox oatmeal_shampoo">
+                  <label><input type="checkbox" value="oatmeal_shampoo">Oatmeal Shampoo</label>
+                </li>
+                <li class="checkbox aminoflex">
+                  <label><input type="checkbox" value="aminoflex">Aminoflex Shampoo</label>
+                </li>
+                <li class="checkbox">
+                  <label>**Extra cost for excessive hair matting</label>
+                </li>
+              </ul>  
+            </div>
+            
+            <div class="clearfix"></div>
+            <button type="button" class="btn btn-default"  id="estimate-button" aria-haspopup="true" aria-expanded="false">Get Estimate 
+                </button>
+            <h3>Total Estimate:</h3>
+            <div class="text-center total"><span id="final-estimate-min"></span><span id="final-estimate-max"></span></div>
+            <p>**This is just an estimate, we need to actually see your dog before giving a final cost.</p>    
+          
+          </div><!-- end col -->
+        
+ 
+        </div><!-- end row -->  
+      </div><!-- end container -->
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <ul>
+              <li>Prestige Pet Grooming</li>
+              <li><span> | </span>4706 Morningside Dr. SE</li>
+              <li><span> | </span>Kentwood, MI</li>
+            </ul>
+            <p>&copy; 2015 ICG Web Development</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+    <script src="scripts/jquery-ui.min.js"></script>
+    <script src="scripts/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+  </body>
+</html>

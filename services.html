@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>prestige groomer</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="styles/bootstrap.css" />
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+
+  </head>
+  <body>
+
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-4 logo">
+            <img src="images/logodog.gif" class=" img-responsive logo-img" alt="Prestige Dog Grooming Logo">
+          </div>
+          <div class="col-xs-8 header-name">
+            <h1>Prestige Pet Grooming</h1>
+            <p>616-698-9823</p>
+          </div>
+        </div>
+      </div>
+
+    </header>
+
+     <nav class="navbar navbar-custom navbar-inverse navbar-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          
+        </div>
+        <div id="navbar" class="collapse navbar-collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="services.html">Services</a></li>            
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    
+           
+    <section class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 grooming-inputs">
+            <h1>Quick Quote:</h1>
+            <!-- Single button -->
+            <div class="btn-group-vertical dog-choices" role="group" aria-label="Vertical button group">
+              <div class="btn group" role="group">
+                <button type="button" id="dog-size-button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dog Size <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" id="dog-size-menu">
+                  <li>Small: Under 10 lbs</li>
+                  <li role="separator" class="divider"></li>
+                  <li>Medium: 11-25 lbs</li>
+                  <li role="separator" class="divider"></li>
+                  <li>Mid: 26-45 lbs</li>
+                  <li role="separator" class="divider"></li>
+                  <li>Large: 46-75 lbs</li>
+                  <li role="separator" class="divider"></li>
+                  <li>Giant: 76-115 lbs</li>
+                  <li role="separator" class="divider"></li>
+                  <li>XXL: Over 116 lbs</li>
+                </ul>
+              </div>
+
+              <div class="btn group" role="group">
+                <button type="button" class="btn btn-default dropdown-toggle" id="hair-length-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hair Type <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" id="hair-menu">
+                  <li>Short Hair</li>
+                  <li role="separator" class="divider"></li>
+                  <li>Med-Long Hair</li>
+                </ul>
+              </div>
+
+              <div class="btn group" role="group">
+                <button type="button" class="btn btn-default dropdown-toggle" id="service-type-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Service <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" id="service-menu">
+                  <li>Bath & Brush only</li>
+                  <li role="separator" class="divider"></li>
+                  <li>Bath & Full Groom</li>
+                  <li role="separator" class="divider"></li>
+                  <li>Doggie Day Spa</li>
+                  <li role="separator" class="divider"></li>
+                  <li>Puppy Intro</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="checkbox-services">
+              <h4>Additional Options:</h4>
+              <ul class="checkbox-options">
+                <li class="checkbox flea_bath">
+                  <label><input type="checkbox" value="flea_bath">Flea Bath</label>
+                </li>
+                <li class="checkbox soother_shampoo">
+                 <label><input type="checkbox" value="soother_shampoo">Soother Shampoo</label>
+                </li>
+                <li class="checkbox oatmeal_shampoo">
+                  <label><input type="checkbox" value="oatmeal_shampoo">Oatmeal Shampoo</label>
+                </li>
+                <li class="checkbox aminoflex">
+                  <label><input type="checkbox" value="aminoflex">Aminoflex Shampoo</label>
+                </li>
+                <li class="checkbox">
+                  <label>**Extra cost for excessive hair matting</label>
+                </li>
+              </ul>  
+            </div>
+            
+            <div class="clearfix"></div>
+            <button type="button" class="btn btn-default"  id="estimate-button" aria-haspopup="true" aria-expanded="false">Get Estimate 
+                </button>
+            <h3>Total Estimate:</h3>
+            <div class="text-center total"><span id="final-estimate-min"></span><span id="final-estimate-max"></span></div>
+            <p>**This is just an estimate, we need to actually see your dog before giving a final cost.</p>    
+          
+          </div><!-- end col -->
+        
+
+          <section class="col-xs-12 col-sm-9 services" >
+            <div class="row main-row">
+              <div class="col-xs-12">
+                <h1 class="services-heading">Our Grooming Service Commitment</h1>
+                <p>All grooming packages include nail trimming, ear cleaning, an exfoliating body scrub with 2 baths and a leave-in conditioner, anal glands expressed, blow dry, brushing, aroma therapy, and a gourmet doggie treat.</p>
+                <p>We accept Cash, Debit, Visa, Mastercard and Discover.</p>
+                <div id="accordion">
+                  <h1>Grooming and Bath Services & Prices</h1>
+                  <article>
+                    <table class="prices">
+                      <tr>
+                        <th scope="col"><span class="price-heading">Size</span></th>
+                        <th scope="col"><span class="price-heading">Bath, Brush & Neaten</span>(Short Hair)</th>
+                        <th scope="col"><span class="price-heading">Bath, Brush & Neaten</span>(Med-Long Hair)</th>
+                        <th scope="col"><span class="price-heading">Full Body Bath & Clip</span></th>
+                        <th scope="col"><span class="price-heading">Puppy Intro</span>(Under 6 months)</th>
+                      </tr>
+                      <tr>
+                        <th scope="row"><span class="price-heading">Small</span>(under 10 lbs)</th>
+                        <td>$12-25</td>
+                        <td>$21-26</td>
+                        <td>$30-40</td>
+                        <td>$20</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><span class="price-heading">Medium</span>(11-25 lbs)</th>
+                        <td>$16-25</td>
+                        <td>$27-40</td>
+                        <td>$36-48</td>
+                        <td>$28</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><span class="price-heading">Midsize</span>(26-45 lbs)</th>
+                        <td>$26-35</td>
+                        <td>$36-46</td>
+                        <td>$49-60</td>
+                        <td>$35</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><span class="price-heading">Large</span>(46-75 lbs)</th>
+                        <td>$36-45</td>
+                        <td>$47-69</td>
+                        <td>$60-82</td>
+                        <td>$40</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><span class="price-heading">Giant</span>(76-115 lbs)</th>
+                        <td>$46-55</td>
+                        <td>$70-93</td>
+                        <td>$83-110</td>
+                        <td>NA</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><span class="price-heading">XXL</span>(116 lbs and over)</th>
+                        <td>$56-70</td>
+                        <td>$94-110</td>
+                        <td>$110-150</td>
+                        <td>NA</td>
+                      </tr>
+                    </table>
+                  </article>
+
+                  <h1>Extra Services/Charges</h1>
+                  <article>
+                    <table  class="prices extras">
+                      <tr>
+                        <th scope="col"><span class="price-heading">Size</span></th>
+                        <th scope="col"><span class="price-heading">Dematt</span> (Excess Matting)</th>
+                        <th scope="col"><span class="price-heading">Excessive Shedding</span></th>
+                        <th scope="col"><span class="price-heading">More than 2 shampoos</span></th>
+                      </tr>
+                      <tr>
+                        <th scope="row"><span class="price-heading">Small</span>(under 10 lbs)</th>
+                        <td>up to $15</td>
+                        <td>up to $15</td>
+                        <td>$3.00</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><span class="price-heading">Medium</span>(11-25 lbs)</th>
+                        <td>up to $17</td>
+                        <td>up to $17</td>
+                        <td>$4.00</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><span class="price-heading">Mid-size</span>(26-45 lbs)</th>
+                        <td>up to $20</td>
+                        <td>up to $20</td>
+                        <td>$5.00</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><span class="price-heading">Large</span>(46-75 lbs)</th>
+                        <td>up to $25</td>
+                        <td>up to $25</td>
+                        <td>$6.00</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><span class="price-heading">Giant</span>(76-115 lbs)</th>
+                        <td>up to $30</td>
+                        <td>up to $30</td>
+                        <td>$7.00</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><span class="price-heading">XXL</span>(116 lbs and over)</th>
+                        <td>up to $40</td>
+                        <td>up to $40</td>
+                        <td>$8.00</td>
+                      </tr>
+                    </table>
+                  </article>
+
+                  <h1>Specialty Grooming Services and Pricing</h1>
+                  <article>
+                    <table class="prices specialty-grooming">
+                      <tr>
+                        <th scope="col"><span class="price-heading">Size</span></th>
+                        <th scope="col"><span class="price-heading">Soothe Shampoo</span>(specialty)</th>
+                        <th scope="col"><span class="price-heading">Oatmeal Shampoo</span>(specialty)</th>
+                        <th scope="col"><span class="price-heading">Aminoflex Shampoo</span></th>
+                        <th scope="col"><span class="price-heading">Flea Bath</span></th>
+                      </tr>
+                      <tr>
+                        <th scope="row"><span class="price-heading">Small</span>(under 10 lbs)</th>
+                        <td>$4.00</td>
+                        <td>$4.00</td>
+                        <td>$3.50</td>
+                        <td>$4.00</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><span class="price-heading">Medium</span>(11-25 lbs)</th>
+                        <td>$6.00</td>
+                        <td>$6.00</td>
+                        <td>$4.00</td>
+                        <td>$6.00</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><span class="price-heading">Midsize</span>(26-45 lbs)</th>
+                        <td>$7.00</td>
+                        <td>$7.00</td>
+                        <td>$6.00</td>
+                        <td>$7.00</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><span class="price-heading">Large</span>(46-75 lbs)</th>
+                        <td>$10.00</td>
+                        <td>$10.00</td>
+                        <td>$8.50</td>
+                        <td>$9.00</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><span class="price-heading">Giant</span>(76-115 lbs)</th>
+                        <td>$13.00</td>
+                        <td>$13.00</td>
+                        <td>$11.00</td>
+                        <td>$12.00</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><span class="price-heading">XXL</span>(116 lbs and over)</th>
+                        <td>$16.00</td>
+                        <td>$16.00</td>
+                        <td>$14.00</td>
+                        <td>$16.00</td>
+                      </tr>
+
+                    </table>
+                  </article>
+                  <h1>Doggie Day Spa and Massage</h1>
+                  <article class="services-spa">                    
+                    <h2>Deluxe Grooming</h2> 
+                    <p>Includes an exfoliating body scrub featuring 2 specialty shampoos ...heated to the perfect temperature, of course. You may choose from Aminoflex shampoo, Midnight White shampoo, Deodorizer shampoo, Ultra Clean shampoo or Down N' Dirty shampoo. Then relax or take a nap with a 15-20 min. heated wrap featuring Oatmeal or Soothe shampoo, then the seasonal specialty, blow dry, brushing, pawdicure, deluxe ear cleaning, haircut, aromatherapy, gourmet doggie treats and a 20-30 minute massage. 
+                    </p>
+                    <table class="prices standard-table">
+                      <tr>
+                        <th scope="col" class="breed">Small Breeds</th>
+                        <th scope="col" class="breed">Medium Breeds</th>
+                        <th scope="col" class="breed">Midsize Breeds</th>
+                        <th scope="col" class="breed">Large Breeds</th>
+                        <th scope="col" class="breed">Giant Breeds</th>
+                        <th scope="col" class="breed">XXL Breeds</th>
+                      </tr>
+                      <tr>
+                        <td>$40-50</td>
+                        <td>$52-65</td>
+                        <td>$67-80</td>
+                        <td>$82-115</td>
+                        <td>$117-150</td>
+                        <td>$153-170</td>                        
+                      </tr>
+                    </table>
+
+                    <table class="prices mobile-table">
+                      <tr>
+                        <th scope="col" class="breed">Small Breeds</th>
+                        <th scope="col" class="breed">Medium Breeds</th>
+                        <th scope="col" class="breed">Midsize Breeds</th>
+                      </tr>
+                      <tr>
+                        <td>$40-50</td>
+                        <td>$52-65</td>
+                        <td>$67-80</td>
+                      </tr>  
+                      <tr>  
+                        <th scope="col" class="breed">Large Breeds</th>
+                        <th scope="col" class="breed">Giant Breeds</th>
+                        <th scope="col" class="breed">XXL Breeds</th>
+                      </tr>
+                      <tr>  
+                        <td>$82-115</td>
+                        <td>$117-150</td>
+                        <td>$153-170</td>                        
+                      </tr>
+                    </table>
+
+                    <h2>Canine Massage Services</h2>
+                    <p>Dogs benefit from massage therapy as much as humans do. We are trained by the Chicago School of Canine Massage. Call today for a consultation. Prices for this service vary according to the dog's size and specific needs. </p>
+
+                  </article>
+            </div><!-- end row -->
+          </div><!-- end col -->
+        </section><!-- end row -->  
+      </div><!-- end container -->
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <ul>
+              <li>Prestige Pet Grooming</li>
+              <li><span> | </span>4706 Morningside Dr. SE</li>
+              <li><span> | </span>Kentwood, MI</li>
+            </ul>
+            <p>&copy; 2015 ICG Web Development</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+    <script src="scripts/jquery-ui.min.js"></script>
+    <script src="scripts/main.js"></script>
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+  </body>
+</html>

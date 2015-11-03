@@ -1,0 +1,678 @@
+/*Colors*/
+/*Global styles*/
+/* line 14, main.scss */
+body {
+  background: #DDDFD4;
+  color: #000;
+}
+
+/* line 21, main.scss */
+header .container,
+.navbar .container,
+.main .container {
+  max-width: 1024px;
+}
+
+/*Typography*/
+/* line 29, main.scss */
+h1, h2, h3, h4, h5, h6,
+footer, header {
+  font-family: 'Candal', sans-serif;
+  color: #000;
+}
+
+/*Header*/
+/* line 38, main.scss */
+header {
+  background: #3fb0ac;
+  width: 100%;
+  height: 100px;
+}
+
+/* line 45, main.scss */
+.header-name {
+  float: right;
+}
+@media screen and (max-width: 485px) {
+  /* line 45, main.scss */
+  .header-name {
+    margin-left: -30px;
+  }
+}
+/* line 50, main.scss */
+.header-name h1, .header-name p {
+  text-align: right;
+  color: #fff;
+}
+/* line 54, main.scss */
+.header-name h1 {
+  margin-top: 30px;
+  font-size: 2.2em;
+  text-shadow: 2px 3px 7px #111111;
+}
+@media screen and (max-width: 680px) {
+  /* line 54, main.scss */
+  .header-name h1 {
+    font-size: 1.5em;
+    margin-top: 20px;
+  }
+}
+/* line 63, main.scss */
+.header-name p {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+/* line 69, main.scss */
+.logo {
+  margin-top: 8px;
+  margin-left: 3%;
+  z-index: 100;
+  background: #dddfd4;
+  border: 1px #000 solid;
+  border-radius: 50%;
+  width: 150px;
+  height: auto;
+}
+@media screen and (max-width: 680px) {
+  /* line 69, main.scss */
+  .logo {
+    width: 100px;
+  }
+}
+
+/* line 83, main.scss */
+.logo-img {
+  margin: 5px auto;
+  border-radius: 50%;
+  width: 150px;
+  height: auto;
+}
+@media screen and (max-width: 680px) {
+  /* line 83, main.scss */
+  .logo-img {
+    width: 100px;
+  }
+}
+
+/*Nav*/
+/* line 95, main.scss */
+.nav-container {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 100, main.scss */
+.navbar {
+  background: #173e43;
+  border-radius: 0;
+}
+
+/* line 105, main.scss */
+#navbar {
+  color: #3fb0ac;
+}
+
+/* line 109, main.scss */
+.nav li {
+  text-align: center;
+  font-size: 18px;
+}
+
+/* line 114, main.scss */
+.nav li:hover {
+  background-color: #080808;
+}
+
+/*Main Section*/
+@media screen and (min-width: 768px) {
+  /* line 126, main.scss */
+  .main-row {
+    height: 640px;
+  }
+}
+
+/*Quick Quote Sidebar*/
+/* line 135, main.scss */
+.grooming-inputs {
+  height: auto;
+  padding-left: 3px;
+  padding-right: 3px;
+  background: #fae596;
+  border: 1px solid #000;
+  border-radius: 10px;
+  text-align: center;
+}
+/* line 143, main.scss */
+.grooming-inputs button {
+  width: 100%;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 1.2em;
+  border: 1px solid #173e43;
+}
+@media screen and (min-width: 766px) {
+  /* line 143, main.scss */
+  .grooming-inputs button {
+    margin-left: 0px;
+  }
+}
+/* line 154, main.scss */
+.grooming-inputs h1 {
+  font-size: 2em;
+  text-align: center;
+}
+/* line 158, main.scss */
+.grooming-inputs .dropdown-menu {
+  left: 20%;
+  background-color: #173e43;
+}
+/* line 161, main.scss */
+.grooming-inputs .dropdown-menu li {
+  text-align: center;
+  color: #fff;
+}
+/* line 165, main.scss */
+.grooming-inputs .dropdown-menu li:hover {
+  background-color: #3fb0ac;
+}
+/* line 168, main.scss */
+.grooming-inputs .dropdown-menu h3 {
+  text-align: center;
+}
+/* line 172, main.scss */
+.grooming-inputs p {
+  margin: 20px 0;
+}
+/* line 176, main.scss */
+.grooming-inputs h3 {
+  padding-bottom: 10px;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  /* line 135, main.scss */
+  .grooming-inputs {
+    width: 98%;
+    margin: 0 5px 20px;
+    height: auto;
+    text-align: center;
+  }
+}
+
+/* line 195, main.scss */
+.dog-choices {
+  width: 100%;
+  margin: 0 auto;
+}
+/* line 198, main.scss */
+.dog-choices h4 {
+  margin-top: 20px;
+}
+
+/* line 203, main.scss */
+.checkbox-services {
+  margin: 10px 0;
+}
+/* line 205, main.scss */
+.checkbox-services h4 {
+  text-align: center;
+}
+
+/* line 210, main.scss */
+.checkbox-options {
+  padding-left: 30%;
+  text-align: left;
+}
+@media screen and (min-width: 766px) {
+  /* line 210, main.scss */
+  .checkbox-options {
+    padding-left: 10px;
+  }
+}
+
+/* line 218, main.scss */
+#estimate-button {
+  margin: 0 auto;
+  width: 150px;
+}
+
+/* line 223, main.scss */
+#final-estimate {
+  display: none;
+  padding: 10px 15px;
+  border: 1px solid #3fb0ac;
+  border-radius: 5px;
+  background: #fff;
+  color: #173e43;
+  font-size: 1.5em;
+}
+
+/* line 234, main.scss */
+#final-estimate-min,
+#final-estimate-max {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* line 239, main.scss */
+.total {
+  margin: 0 auto;
+}
+
+/* line 243, main.scss */
+.js-total {
+  width: 90%;
+  background-color: #fff;
+  border: 2px solid #173e43;
+  border-radius: 5px;
+  color: #173e43;
+  padding: 3px 6px;
+}
+
+/*Main photo section*/
+/* line 255, main.scss */
+#main-display {
+  margin-bottom: 10px;
+}
+/* line 257, main.scss */
+#main-display p {
+  font-size: 1.1em;
+}
+
+/*Photo Carousel*/
+/* line 264, main.scss */
+#carousel {
+  height: 300px;
+  background: #3fb0ac;
+  margin-bottom: 10px;
+}
+
+/* line 270, main.scss */
+.carousel-inner > .item > img {
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+/* line 275, main.scss */
+.carousel-control .glyphicon-chevron-left {
+  margin-left: -28px;
+}
+
+/* line 279, main.scss */
+.carousel-control .glyphicon-chevron-right {
+  margin-right: -28px;
+}
+
+/*Two Boxes*/
+/* line 287, main.scss */
+.grooming,
+.spa {
+  background: #173e43;
+  color: #fae596;
+  border-radius: 10%;
+  border: 3px solid #3fb0ac;
+  width: 48%;
+  height: 225px;
+  padding-top: 5px;
+  text-align: center;
+}
+@media screen and (max-width: 399px) {
+  /* line 287, main.scss */
+  .grooming,
+  .spa {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+/* line 300, main.scss */
+.grooming h1,
+.spa h1 {
+  margin: 8px 0;
+  color: #fff;
+  font-size: 1em;
+}
+@media screen and (min-width: 991px) {
+  /* line 287, main.scss */
+  .grooming,
+  .spa {
+    margin-top: 20px;
+  }
+}
+
+/* line 310, main.scss */
+.grooming {
+  margin-left: 10px;
+  margin-right: 5px;
+}
+@media screen and (max-width: 399px) {
+  /* line 310, main.scss */
+  .grooming {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/* line 319, main.scss */
+#dogbath {
+  margin: 0 auto;
+  height: 70%;
+  border-radius: 5px;
+}
+
+/* line 325, main.scss */
+#dogspa {
+  margin: 0 auto;
+  padding-top: 3px;
+  max-height: 75%;
+  border-radius: 5px;
+}
+
+/*Services Page*/
+/* line 338, main.scss */
+.prices {
+  width: auto;
+}
+/* line 341, main.scss */
+.prices th, .prices td {
+  font-weight: normal;
+  text-align: center;
+  padding: 7px;
+  border: 1px solid #173e43;
+}
+@media screen and (max-width: 550px) {
+  /* line 341, main.scss */
+  .prices th, .prices td {
+    padding: 2px;
+    font-size: 11px;
+  }
+}
+/* line 351, main.scss */
+.prices td {
+  background-color: #fae596;
+}
+/* line 354, main.scss */
+.prices th {
+  font-size: 12px;
+  background-color: #3fb0ac;
+}
+
+/* line 362, main.scss */
+.price-heading {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+}
+@media screen and (max-width: 550px) {
+  /* line 362, main.scss */
+  .price-heading {
+    font-size: 11px;
+  }
+}
+
+/* line 371, main.scss */
+.mobile-table {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  /* line 371, main.scss */
+  .mobile-table {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 378, main.scss */
+  .standard-table {
+    display: none;
+  }
+}
+
+/* line 385, main.scss */
+.services-spa table {
+  margin-top: 25px;
+}
+/* line 388, main.scss */
+.services-spa .breed {
+  font-weight: bold;
+  font-size: 16px;
+}
+@media screen and (max-width: 480px) {
+  /* line 388, main.scss */
+  .services-spa .breed {
+    font-size: 10px;
+  }
+}
+
+/* line 399, main.scss */
+.services-heading,
+.facilities-heading {
+  font-size: 22px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 990px) {
+  /* line 403, main.scss */
+  .specialty-grooming th {
+    padding: 2px;
+  }
+}
+@media screen and (max-width: 550px) {
+  /* line 403, main.scss */
+  .specialty-grooming th {
+    padding: 2px;
+    font-size: 10px;
+  }
+}
+
+/*Facilities Page*/
+/* line 417, main.scss */
+.facilities {
+  border: 1px double #173e43;
+  border-radius: 5px;
+  background-color: #3fb0ac;
+}
+@media screen and (min-width: 768px) {
+  /* line 417, main.scss */
+  .facilities {
+    width: 72%;
+    height: 640px;
+    margin-left: 2%;
+  }
+}
+
+/* line 429, main.scss */
+.facilities-photo {
+  margin-bottom: 15px;
+}
+/* line 431, main.scss */
+.facilities-photo img {
+  margin: 0px auto;
+  padding: 5px 0;
+  max-width: 95%;
+  border-radius: 15px;
+}
+@media screen and (min-width: 990px) {
+  /* line 431, main.scss */
+  .facilities-photo img {
+    max-height: 220px;
+  }
+}
+/* line 440, main.scss */
+.facilities-photo figcaption {
+  text-align: center;
+  font-size: 18px;
+  text-shadow: 2px 2px 2px #fff;
+  font-weight: bold;
+}
+
+/*Photos Page*/
+/* line 452, main.scss */
+.pet-photos {
+  background-color: #173e43;
+}
+@media screen and (min-width: 768px) {
+  /* line 452, main.scss */
+  .pet-photos {
+    width: 70%;
+    margin-left: 20px;
+  }
+}
+
+/* line 460, main.scss */
+#gallery {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 466, main.scss */
+#gallery li {
+  float: left;
+  width: 45%;
+  margin: 2.5%;
+  text-align: center;
+}
+@media screen and (max-width: 639px) {
+  /* line 466, main.scss */
+  #gallery li {
+    width: 95%;
+  }
+}
+
+/*Contact Page*/
+@media screen and (min-width: 768px) {
+  /* line 479, main.scss */
+  .contact {
+    width: 70%;
+    margin-right: 2%;
+  }
+}
+@media screen and (max-width: 679px) {
+  /* line 484, main.scss */
+  .contact h1 {
+    font-size: 24px;
+  }
+}
+
+/* line 492, main.scss */
+.address-contact,
+.address-hours {
+  background: #3fb0ac;
+  color: #000;
+  border-radius: 10px;
+  border: 3px solid #173e43;
+  height: 225px;
+  font-size: 16px;
+}
+/* line 499, main.scss */
+.address-contact ul,
+.address-hours ul {
+  list-style: none;
+  padding-left: 0;
+}
+/* line 502, main.scss */
+.address-contact ul li,
+.address-hours ul li {
+  padding: 5px 0;
+}
+/* line 506, main.scss */
+.address-contact h2,
+.address-hours h2 {
+  color: #000;
+  font-size: 20px;
+  text-decoration: underline;
+}
+@media screen and (min-width: 550px) {
+  /* line 492, main.scss */
+  .address-contact,
+  .address-hours {
+    width: 48%;
+    margin-left: 1%;
+  }
+}
+
+/* line 517, main.scss */
+.address-contact span {
+  font-weight: bold;
+}
+
+/* line 521, main.scss */
+.address-hours {
+  margin-top: 15px;
+}
+/* line 523, main.scss */
+.address-hours dd, .address-hours dt {
+  float: left;
+}
+/* line 526, main.scss */
+.address-hours dt {
+  clear: both;
+  width: 40%;
+}
+@media screen and (min-width: 550px) {
+  /* line 521, main.scss */
+  .address-hours {
+    margin-top: 0px;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 521, main.scss */
+  .address-hours {
+    margin-top: 0px;
+  }
+}
+
+/* line 538, main.scss */
+.map {
+  margin: 25px 0;
+  border: 1px solid #173e43;
+}
+@media screen and (min-width: 768px) {
+  /* line 538, main.scss */
+  .map {
+    margin-bottom: 0px;
+  }
+}
+
+/*Footer*/
+/* line 548, main.scss */
+footer {
+  background: #3fb0ac;
+  color: #000;
+  text-align: center;
+  padding: 20px 0 80px;
+  margin: 15px 0;
+}
+/* line 554, main.scss */
+footer ul {
+  padding: 0;
+  margin: 0;
+}
+/* line 558, main.scss */
+footer ul li {
+  display: inline;
+  list-style: none;
+}
+@media screen and (max-width: 765px) {
+  /* line 558, main.scss */
+  footer ul li {
+    display: block;
+  }
+}
+/* line 564, main.scss */
+footer ul li span {
+  font-family: Helvetica, sans-serif;
+  font-weight: normal;
+  color: #fae596;
+}
+@media screen and (max-width: 765px) {
+  /* line 564, main.scss */
+  footer ul li span {
+    display: none;
+  }
+}
+@media screen and (max-width: 550px) {
+  /* line 548, main.scss */
+  footer {
+    margin-top: 10px;
+  }
+}

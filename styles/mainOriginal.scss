@@ -1,0 +1,515 @@
+
+
+/*Colors*/
+ $primary: #3fb0ac;
+ $secondary: #173e43;
+ $background: #DDDFD4;
+ $box1: #fae596;
+ $box2: #fae596;
+ $headertext: #fae596;
+
+
+ /*Global styles*/
+
+body {
+  background: #DDDFD4;
+  color: #000;
+}
+
+header .container,
+.navbar .container,
+.main .container, {
+  max-width: 1024px;
+}
+
+
+/*Typography*/
+
+h1, h2, h3, h4, h5, h6, 
+footer, header{
+  font-family: 'Candal', sans-serif;
+  color: #000;
+}
+
+
+
+/*Header*/
+
+header{
+  background: $primary;
+  width: 100%;
+  height: 100px;
+}
+
+
+.header-name{
+  float: right;
+   @media screen and (max-width: 485px){
+    margin-left: -30px;
+      }
+  h1, p{
+    text-align: right;
+    color: #fff;
+  }
+  h1{
+    margin-top: 30px;
+    font-size: 2.2em;
+    text-shadow: 2px 3px 7px #111111;
+      @media screen and (max-width: 680px){
+      font-size: 1.5em;
+      margin-top: 20px;
+      }
+    }
+  }
+
+.logo{
+  margin-top: 8px;
+  margin-left: 3%;
+  z-index: 100;
+  background: $background;
+  border: 1px #000 solid;
+  border-radius: 50%;
+  width: 150px;
+  height: auto;
+  @media screen and (max-width: 680px){
+      width: 100px;
+      }
+}
+
+.logo-img{
+    margin: 5px auto;
+    border-radius: 50%;
+    width: 150px;
+    height: auto;
+    @media screen and (max-width: 680px){
+      width: 100px;
+      }
+}
+
+/*Nav*/
+
+.nav-container{
+  padding: 0;
+  margin: 0;
+}
+
+.navbar{
+  background: $secondary;
+  border-radius: 0;
+}
+
+#navbar{
+  color: $primary;
+}
+
+.nav li{
+  text-align: center;
+  font-size: 18px;
+}
+
+.nav li:hover {
+    background-color: #080808;
+  }
+
+.navbar-header button{
+    @media screen and (max-width: 460px){
+    left: 55%;
+      }
+}
+
+
+/*Main Section*/
+
+.main-row{
+  @media screen and (min-width: 768px){
+    height: 640px;
+  }
+
+}
+
+/*Quick Quote Sidebar*/
+
+.grooming-inputs{
+  height: auto;
+  background: $box1;
+  border: 1px solid #000;
+  border-radius: 10px;
+    button{
+      width: 100%;
+      margin: 0 auto;
+      font-weight: bold;
+      font-size: 1.2em;
+      border: 1px solid $secondary;
+        @media screen and (min-width: 766px){
+          margin-left: -10px;
+        }
+    }
+
+    h1{
+      font-size: 2em;
+      text-align: center;
+    }
+    .dropdown-menu{
+      left: 20%;
+      background-color: $secondary;
+        li {
+          text-align: center;
+          a{
+          color: #fff;        
+          }
+        }  
+        li>a:hover{
+          background-color: $primary;
+        }
+        h3{
+          text-align: center;
+        }  
+      }
+    p{
+      margin: 10px 0;    
+
+      }
+    h3{
+      padding-bottom: 10px;
+      text-align: center;
+    }  
+
+    @media screen and (max-width: 767px){
+      width: 98%; 
+      margin: 0 5px 20px;
+      height: auto;
+      text-align: center;
+    }
+
+    @media screen and (min-width: 768px){
+          height: 100%;
+        }
+
+
+}
+
+
+.dog-choices{
+  width: 100%;
+  margin: 0 auto;
+  h4{
+    margin-top: 20px;
+  }
+}
+
+.checkbox-services{
+  margin: 10px 0;
+  h4{
+    text-align: center;
+  }
+}
+
+.checkbox-options{
+  padding-left: 30%;
+  text-align: left;
+   @media screen and (min-width: 766px){
+        padding-left: 10px;
+        }
+  }
+
+
+
+#final-estimate{
+  display: none;
+  padding: 10px 15px;
+  border: 1px solid $primary;
+  border-radius: 5px;
+  background: #fff;
+  color: $secondary;
+  font-size: 1.5em;
+}
+
+
+
+
+
+/*Main photo section*/
+
+#main-display{
+  margin-bottom: 10px;
+  p{
+    font-size: 1.1em;
+  }
+}
+
+/*Photo Carousel*/
+
+#carousel{
+  height: 300px;
+  background: $primary;
+  margin-bottom: 10px;
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.carousel-control .glyphicon-chevron-left{
+  margin-left: -28px;
+}
+
+.carousel-control .glyphicon-chevron-right{
+  margin-right: -28px;
+}
+
+/*Two Boxes*/
+
+
+.grooming,
+.spa{
+  background: $secondary;
+  color: $box1;
+  border-radius: 10%;
+  border: 3px solid $primary;
+  width: 48%;
+  height: 225px;
+  padding-top: 5px;
+  text-align: center;
+  h1{
+    margin: 8px 0;
+    color: #fff;
+    font-size: 1em;
+  }
+  @media screen and (min-width: 991px){
+    margin-top: 20px;
+  }
+}
+
+.grooming{
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+#dogbath{
+  margin: 0 auto;
+  height: 70%;
+  border-radius: 5px;
+}
+
+#dogspa{
+  margin: 0 auto;
+  padding-top: 3px;
+  max-height: 75%;
+  border-radius: 5px;
+}
+
+
+
+
+/*Footer*/
+
+footer{
+  background: $primary;
+  color: #000;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 15px;
+
+
+  @media screen and (max-width: 550px){
+    margin-top: 10px;
+  }
+}
+
+
+/*Services Page*/
+
+
+
+.prices{
+  max-width: 100%;
+  border: 1px solid $secondary;
+
+  th, td{
+    font-weight: normal;
+    text-align: center;
+    padding: 7px;
+    border: 1px solid $secondary;
+    @media screen and (max-width: 550px){
+      padding: 2px;
+      font-size: 11px;
+    }
+  }
+  td{
+    background-color: $box1;    
+  }
+  th{
+    font-size: 12px;
+    background-color: $primary;
+  }
+
+
+}
+
+.price-heading{
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+      @media screen and (max-width: 550px){
+      font-size: 11px;
+    }
+}
+
+.services-spa{
+  table{
+    margin-top: 25px;
+  }
+  .breed{
+    font-weight: bold;
+    font-size: 16px;
+    @media screen and (max-width: 480px){
+      font-size: 10px;
+    }
+  }
+
+}
+
+.services-heading,
+.facilities-heading{
+  font-size: 22px;
+}
+
+.specialty-grooming th{
+  @media screen and (min-width: 768px) and (max-width: 990px){
+    padding: 2px;
+  }
+  @media screen and (max-width: 550px){
+  padding: 2px;
+  font-size: 10px;
+  }
+}
+
+
+
+/*Facilities Page*/
+
+.facilities{
+
+  border: 1px double $secondary;
+  border-radius: 5px;
+  background-color: $primary;
+  @media screen and (min-width: 768px){
+    width: 72%;
+    height: 640px;
+    margin-left: 2%;
+  }
+}
+
+.facilities-photo{
+  margin-bottom: 15px;
+  img{
+    margin: 0px auto;
+    padding: 5px 0;
+    max-width: 95%;
+    border-radius: 15px;
+      @media screen and (min-width: 990px){
+      max-height: 220px;
+      }
+  }
+  figcaption{
+    text-align: center;
+    font-size: 18px;
+    text-shadow: 2px 2px 2px #fff;
+    font-weight: bold;
+  }
+}
+
+
+
+/*Photos Page*/
+
+.pet-photos{
+  background-color: $secondary;
+  @media screen and (min-width:768px){
+    width: 70%;
+    margin-left: 20px;
+  }
+}
+
+#gallery {
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+#gallery li {
+  float:left;
+  width:45%;
+  margin:2.5%;
+  text-align: center;
+  @media screen and (max-width: 639px){
+    width: 95%;
+  }
+}
+
+
+/*Contact Page*/
+
+.contact{
+  @media screen and (min-width: 768px){
+    width: 70%;
+    margin-right: 2%;
+  }
+}
+
+.address-contact,
+.address-hours{
+  background: $primary;
+  color: #000;
+  border-radius: 10px;
+  border: 3px solid $secondary;
+  height: 225px;
+  font-size: 16px;
+  ul{
+    list-style: none;
+    padding-left: 0;
+    li{
+      padding: 5px 0;
+    }
+  }
+  h2{
+    color: #000;
+    font-size: 20px;
+    text-decoration: underline;
+  }
+  @media screen and (min-width: 550px){
+    width: 48%;
+    margin-left: 1%;
+  }
+}
+
+.address-contact span{
+  font-weight: bold;
+}
+
+.address-hours{
+  margin-top: 15px;
+  dd, dt{
+    float: left;
+  }
+  dt{
+    clear: both;
+    width: 40%;
+  }
+  @media screen and (min-width: 550px){
+    margin-top: 0px;
+  }
+  @media screen and (min-width: 768px){
+    margin-top: 0px;
+  }
+}
+
+.map{
+  margin: 25px 0;
+  border: 1px solid $secondary;
+  @media screen and (min-width: 768px){
+    margin-bottom: 0px;
+  }
+}
+
